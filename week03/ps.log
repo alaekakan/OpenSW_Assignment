@@ -1,0 +1,31 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 14:50 ?        00:00:00 /sbin/init
+root           2       1  0 14:50 ?        00:00:00 /init
+root           6       2  0 14:50 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          39       1  0 14:50 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          87       1  0 14:50 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+root         101       1  0 14:50 ?        00:00:00 snapfuse /var/lib/snapd/snaps/tree_54.snap /snap/tree/54 -o ro,nodev,allow_other,suid
+root         102       1  0 14:50 ?        00:00:01 snapfuse /var/lib/snapd/snaps/snapd_25202.snap /snap/snapd/25202 -o ro,nodev,allow_other,suid
+root         103       1  0 14:50 ?        00:00:00 snapfuse /var/lib/snapd/snaps/core22_2111.snap /snap/core22/2111 -o ro,nodev,allow_other,suid
+root         110       1  0 14:50 ?        00:00:00 snapfuse /var/lib/snapd/snaps/core22_2133.snap /snap/core22/2133 -o ro,nodev,allow_other,suid
+systemd+     193       1  0 14:50 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     194       1  0 14:50 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         203       1  0 14:50 ?        00:00:00 /usr/sbin/cron -f -P
+message+     204       1  0 14:50 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         215       1  0 14:50 ?        00:00:00 /usr/lib/snapd/snapd
+root         223       1  0 14:50 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         227       1  0 14:50 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+root         251       1  0 14:50 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+syslog       260       1  0 14:50 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         264       1  0 14:50 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         270       1  0 14:50 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         439       2  0 14:50 ?        00:00:00 /init
+root         440     439  0 14:50 ?        00:00:00 /init
+wnqhgus      441     440  0 14:50 pts/0    00:00:00 -bash
+root         442       2  0 14:50 pts/1    00:00:00 /bin/login -f
+wnqhgus      488       1  0 14:50 ?        00:00:00 /usr/lib/systemd/systemd --user
+wnqhgus      489     488  0 14:50 ?        00:00:00 (sd-pam)
+wnqhgus      505     442  0 14:50 pts/1    00:00:00 -bash
+polkitd     1115       1  0 15:06 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+wnqhgus     1451     441  0 15:36 pts/0    00:00:00 ps -ef
+root        1452     441  0 15:36 pts/0    00:00:00 sudo tee ps.log
