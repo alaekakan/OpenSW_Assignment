@@ -3,7 +3,8 @@
 file_wordcnt() {
     for f in $@
     do
-        if [ ! -e $f ]; then
+        if [ ! -e $f ]; 
+        then
             echo "존재 X"
         else
             count=$(wc -w < $f)
