@@ -24,12 +24,12 @@ int main(int argc, char *argv[]) {
     ssize_t read_result;
 
     while(1) {
-        read_result = read(STDERR_FILENO, read_str, BUF_SIZE);
+        read_result = read(0, read_str, BUF_SIZE);
         if (read_result == 0) {
             printf("DONE!!\n");
             return 0;
         }
-        printf("%s\n",read_str);
+        write(1, read_str,read_result);
     }
 
     free(read_str);
